@@ -8,7 +8,7 @@ import androidx.room.PrimaryKey;
 public class Note {
     @PrimaryKey
     public int id;
-
+    //change made
     @ColumnInfo(name = "date")
     public int date;
 
