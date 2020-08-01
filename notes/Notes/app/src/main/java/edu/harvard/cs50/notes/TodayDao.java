@@ -13,5 +13,4 @@ public interface TodayDao {
     @Query("SELECT * FROM today WHERE date=:date")
     List<Today> gettoday(int date);
 
-    @Query("Update ")
 }
