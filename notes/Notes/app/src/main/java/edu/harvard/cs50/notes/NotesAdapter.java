@@ -36,6 +36,10 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NoteViewHold
                     intent.putExtra("id", note.id);
                     intent.putExtra("date", note.date);
                     intent.putExtra("content", note.content);
+                    intent.putExtra("expenditure", note.expenditure);
+                    intent.putExtra("stock", note.stock);
+                    intent.putExtra("total_dayend", note.total_dayend);
+                    intent.putExtra("total_exp", note.total_exp);
 //                    intent.putExtra("item1", values[0]);
 //                    intent.putExtra("item2", values[1]);
 //                    intent.putExtra("item3", values[2]);

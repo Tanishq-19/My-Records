@@ -12,8 +12,20 @@ public class Note {
     @ColumnInfo(name = "content")
     public String content;
 
+    @ColumnInfo(name = "expenditure")
+    public String expenditure;
+
+    @ColumnInfo(name = "stock")
+    public String stock;
+
     @ColumnInfo(name = "date")
-    public int date;
+    public String date;
+
+    @ColumnInfo(name = "total_dayend")
+    public String total_dayend;
+
+    @ColumnInfo(name = "total_exp")
+    public String total_exp;
 //
 //    @ColumnInfo(name = "item1")
 //    public String item1;

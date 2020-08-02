@@ -33,8 +33,9 @@
                     android:orientation="horizontal">
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="200dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5">
 
                         <TextView
                             android:id="@+id/Date"
@@ -45,8 +46,9 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="200dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5">
 
                         <EditText
                             android:id="@+id/date_editText"
@@ -71,6 +73,41 @@
                 android:background="@color/colorAccent"
                 android:textColor="#fff" />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text="Item Name"
+                    android:textColor="#fff"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text="Price"
+                    android:textColor="#fff"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text="Quantity"
+                    android:textColor="#fff"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text="Total"
+                    android:textColor="#fff"
+                    android:gravity="center"/>
+
+            </LinearLayout>
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
@@ -79,11 +116,15 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:background="@color/colorAccent">
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item1"
@@ -97,8 +138,11 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item1rs"
@@ -112,8 +156,11 @@
                             android:inputType="number"/>
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item1qty"
@@ -127,8 +174,11 @@
                             android:inputType="number"/>
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item1ttl"
@@ -153,11 +203,15 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:background="@color/colorAccent">
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item2"
@@ -171,8 +225,11 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item2rs"
@@ -183,11 +240,14 @@
                             android:padding="10dp"
                             tools:layout_editor_absoluteX="16dp"
                             tools:layout_editor_absoluteY="0dp"
-                            android:inputType="number"/>
+                            android:inputType="number" />
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item2qty"
@@ -201,19 +261,22 @@
                             android:inputType="number"/>
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item2ttl"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="75dp"
                             android:background="@android:color/transparent"
                             android:gravity="center"
+                            android:inputType="number"
                             android:padding="10dp"
                             tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="0dp"
-                            android:inputType="number"/>
+                            tools:layout_editor_absoluteY="0dp" />
                     </androidx.cardview.widget.CardView>
 
                 </LinearLayout>
@@ -227,11 +290,15 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:background="@color/colorAccent">
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item3"
@@ -245,8 +312,11 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item3rs"
@@ -260,8 +330,11 @@
                             android:inputType="number"/>
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item3qty"
@@ -275,8 +348,11 @@
                             android:inputType="number"/>
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item3ttl"
@@ -301,11 +377,15 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:background="@color/colorAccent">
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item4"
@@ -319,8 +399,11 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item4rs"
@@ -334,8 +417,11 @@
                             android:inputType="number"/>
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item4qty"
@@ -346,11 +432,14 @@
                             android:padding="10dp"
                             tools:layout_editor_absoluteX="16dp"
                             tools:layout_editor_absoluteY="0dp"
-                            android:inputType="number"/>
+                            android:inputType="number" />
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item4ttl"
@@ -375,11 +464,15 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:background="@color/colorAccent">
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item5"
@@ -393,8 +486,11 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item5rs"
@@ -408,8 +504,11 @@
                             android:inputType="number"/>
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item5qty"
@@ -423,8 +522,11 @@
                             android:inputType="number"/>
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item5ttl"
@@ -449,11 +551,15 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:background="@color/colorAccent">
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item6"
@@ -467,8 +573,11 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item6rs"
@@ -482,8 +591,11 @@
                             android:inputType="number"/>
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item6qty"
@@ -497,8 +609,11 @@
                             android:inputType="number"/>
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item6ttl"
@@ -523,11 +638,15 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:background="@color/colorAccent">
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item7"
@@ -541,8 +660,11 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item7rs"
@@ -556,8 +678,11 @@
                             android:inputType="number"/>
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item7qty"
@@ -571,8 +696,11 @@
                             android:inputType="number"/>
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item7ttl"
@@ -597,11 +725,15 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:background="@color/colorAccent">
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item8"
@@ -615,8 +747,11 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item8rs"
@@ -630,8 +765,11 @@
                             android:inputType="number"/>
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item8qty"
@@ -645,8 +783,11 @@
                             android:inputType="number"/>
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
 
                         <EditText
                             android:id="@+id/item8ttl"
@@ -665,23 +806,805 @@
 
 
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorAccent">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75">
+
+                    <TextView
+                        android:id="@+id/total_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Total" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:layout_margin="3dp"
+                    android:layout_gravity="center">
+                    <EditText
+                        android:id="@+id/itemtotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="0dp"
+                        android:inputType="number"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Total Expenditure"
+                android:background="@color/colorAccent"
+                android:textColor="#fff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text="Item Name"
+                    android:textColor="#fff"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text="Ammount"
+                    android:textColor="#fff"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Description"
+                    android:textColor="#fff"
+                    android:gravity="center"/>
+
+            </LinearLayout>
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="60dp"
+                android:layout_margin="5dp">
 
-                <EditText
-                    android:id="@+id/itemtotal"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
-                    android:gravity="center"
-                    android:padding="10dp"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="0dp"
-                    android:inputType="number"/>
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@color/colorAccent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/item9"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/item9rs"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp"
+                            android:inputType="number"/>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/item9desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp" />
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@color/colorAccent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/item10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/item10rs"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp"
+                            android:inputType="number"/>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/item10desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp" />
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@color/colorAccent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/item11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/item11rs"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp"
+                            android:inputType="number"/>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/item11desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp" />
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@color/colorAccent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/item12"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/item12rs"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp"
+                            android:inputType="number"/>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/item12desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp" />
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorAccent">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75">
+
+                    <TextView
+                        android:id="@+id/total_textView_exp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Total" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:layout_margin="3dp"
+                    android:layout_gravity="center">
+                    <EditText
+                        android:id="@+id/total_exp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="0dp"
+                        android:inputType="number"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Stock Left"
+                android:background="@color/colorAccent"
+                android:textColor="#fff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Item Name"
+                    android:textColor="#fff"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text="Price"
+                    android:textColor="#fff"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text="Quantity"
+                    android:textColor="#fff"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@color/colorAccent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/item13"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/item13ttl"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp"
+                            android:inputType="number"/>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/item13lft"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp"
+                            android:inputType="number"/>
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@color/colorAccent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/item14"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/item14ttl"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp"
+                            android:inputType="number"/>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/item14lft"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp"
+                            android:inputType="number"/>
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@color/colorAccent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/item15"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/item15ttl"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp"
+                            android:inputType="number"/>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/item15lft"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp"
+                            android:inputType="number"/>
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@color/colorAccent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/item16"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/item16ttl"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp"
+                            android:inputType="number"/>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/item16lft"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp"
+                            android:inputType="number"/>
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@color/colorAccent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/item17"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/item17ttl"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp"
+                            android:inputType="number"/>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center">
+
+                        <EditText
+                            android:id="@+id/item17lft"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp"
+                            android:inputType="number"/>
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Developed By Tanishq Chandra"
+                    android:gravity="center"
+                    android:layout_gravity="top"
+                    android:background="@color/design_default_color_primary"
+                    android:textColor="#fff"/>
+
+                <Button
+                    android:id="@+id/delete_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Delete this record sheet"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="#fff"/>
+            </LinearLayout>
+
+
+
         </LinearLayout>
+
 
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
